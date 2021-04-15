@@ -14,7 +14,7 @@
 
 header{
     background-color: #f9003d;
-    height: 60px;
+    height: 70px;
     position: fixed;
     top: 0;
     z-index: 99;
@@ -41,17 +41,24 @@ width: 590px;
     font-family: 'Bebas Neue', cursive;
     font-size: 18px;
 }
+.btn_menu i{
+    display: none;
+    color: white;
+    font-size: 30px;
+
+}
 
 main{
     margin-top: 64px;
 }
 .container_banner{
     position: relative;
-    height: 800px;
+    height: 600px;
 }
 
 .fundo_banner{
     width: 100%;
+    height: 100%;
     
 }
 
@@ -95,7 +102,7 @@ width: 37px;
 .container_sobre{
     background-color: #080324;
     color: #ffffff;
-    height: 800px;
+    height: 900px;
 
 }
 
@@ -103,7 +110,7 @@ width: 37px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 100%;
+    height: 80%;
 
 }
 
@@ -120,16 +127,9 @@ width: 37px;
     justify-content: space-between;
 
 }
-.box_sobre img{
-    width: 491px;
-    height: 476px;
-
-}
-
-.box_sobre_textos{
 
 
-}
+
 
 .box_sobre_textos span{
     font-family: 'Courier New', Courier, monospace;
@@ -166,7 +166,7 @@ width: 37px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 193px;
+    height: 170px;
 
 }
 
@@ -194,7 +194,7 @@ width: 37px;
     font-size: 28px;
     text-transform: uppercase;
     color: #A259F7;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     
 
 }
@@ -219,31 +219,33 @@ width: 37px;
 
 }
 
-.box_endereco{
+.box_endereco{ 
     width: 899px;
     height: 203px;
     background-color: #010010;
     border: 2px solid #340b65;
     display: flex;
-    /* justify-content: center; */
+    /*justify-content: center; */
     align-items: center;
-    
-}
+    } 
+
+
 .box_endereco p{
     font-family: 'Courier New', Courier, monospace;
     font-size: 24px;
     text-transform: uppercase;
     color: #a259f7;
     width: 435px;
+    margin-left: 25px;
 }
 
-.box_endereco img{
+.box_endereco img{ 
     position: absolute;
-    top: 1950px;
-    right: 400px;
+    top: 1825px;
+    right: 300px;
 
 
-}
+} 
 footer{
     background: #f9003d;
     display: flex;
@@ -256,6 +258,170 @@ footer span{
     font-family: 'open Sans' , sans-serif;
     font-size: 18px;
     color: #ffffff;
+
+
+}
+
+@media (max-width: 420px){
+
+    .container{
+        width: 80vw;
+    }
+    .container_header{
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .menu_header{
+        display: none;
+
+        height: 300px;
+        width: 100%;
+        padding-left: 10vw;
+
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: unset;
+
+        position: absolute;
+        left: 0;
+        top: 58px;
+
+        background-color: black;
+        
+    }
+
+    .btn_menu i {
+        display: inline-block;
+    }
+    
+    .container_banner{
+        display: flex;
+        justify-content: center;
+        height: 500px;
+    }
+
+    .fundo_banner{
+        height: 100%;
+        width: 100%;
+    }
+
+    .box_conteudo {
+        top: 121px;
+        left: 24px;
+        align-items: center;
+
+    }
+
+    h1{
+        width: 378px;
+        font-size: 33px;
+        height: 95px;
+    }
+    .hr_banner{
+        width: 378px;
+        margin: 10px 0;
+    }
+
+    .box_conteudo span{
+        font-size: 36px;
+        margin-top: 20px;
+    }
+    .icone_mouse{
+        width: 45px;
+        margin-top:10px;
+    }
+
+    .container_sobre{
+        height: 1320px;
+    }
+
+    .espacamento_sobre{
+        /* justify-content: center */
+        height: 1400px;
+        align-items: center;
+        
+    }
+
+    .h2_sobre{
+        font-size: 28px;
+        
+        height: auto;
+    }
+
+    .box_sobre{
+        width: 100%;
+        flex-direction: column;
+    }
+    .img_box_sobre{
+        width: 80vw;
+  
+    }
+    .box_sobre_textos {
+        margin-top: 50px;
+    }
+    
+    .h3_sobre{
+        font-size: 19px;
+        width: auto;
+        line-height: 32px;
+        margin: 30px 0;
+    }
+    .box_sobre_textos p{
+        width: auto;
+        text-align: justify;
+        margin-bottom: 50px;
+    }
+    .conteiner_info{
+        flex-direction: column;
+        height: 600px;
+        justify-content: space-around;
+    }
+
+    .endereco {
+        position: unset;
+        justify-content: unset;
+        height: 750px;
+    }
+    .endereco h2{
+        width: unset;
+        font-size: 45px;
+        height: 55px;
+        margin: 40px;
+        
+    }
+    
+    .box_endereco{
+        width: 80vw;
+        height: unset;
+        padding: 50px 40px;
+
+    }
+
+      .endereco img{
+        position: unset;
+        width: unset;
+
+    }    
+
+    .box_endereco img{
+        position: absolute;
+        top: 2924px;
+        right: 52px;
+
+    }
+    .box_endereco p{
+        margin-left: 0;
+        font-size: 26px;
+    }
+
+    footer span {
+        width: 80vw;
+        text-align: center;
+    }
+
+
+
 
 
 }
